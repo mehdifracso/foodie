@@ -7,17 +7,22 @@ export function Header() {
   const { totalItems } = useCart();
 
   return (
-    <header className="header">
-      <Link href="/">
-        <div className="header-logo">
-          Foodie
-          <span>Restock your shop</span>
-        </div>
-      </Link>
-      <Link href="/cart" className="cart-button">
-        🛒
-        {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
-      </Link>
-    </header>
+    <>
+      <header className="header">
+        <Link href="/">
+          <div className="header-logo">
+            Foodie
+            <span>Wholesale Restocking</span>
+          </div>
+        </Link>
+        <Link href="/cart" className="cart-button">
+          🛒
+          {totalItems > 0 && <span className="cart-badge">{totalItems}</span>}
+        </Link>
+      </header>
+      <div className="promo-banner">
+        Wholesale prices — direct to your shop
+      </div>
+    </>
   );
 }
