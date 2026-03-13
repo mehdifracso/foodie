@@ -4,9 +4,9 @@ import { categories } from "@/lib/data";
 export default function HomePage() {
   return (
     <main className="page">
-      <h1 className="page-title">Browse Categories</h1>
+      <h1 className="page-title">Categories</h1>
       <p className="page-subtitle">
-        Find wholesale products for your shop
+        Wholesale products at the best prices for your shop
       </p>
 
       <div className="category-grid">
